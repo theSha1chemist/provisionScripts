@@ -31,7 +31,7 @@ if [ $(dpkg-query -W -f='${Status}' iceweasel 2>/dev/null | grep -c -v "ok insta
 		apt-get install -y firefox-mozilla-build 
 	fi
 fi
-
+#TODO fix this...
 if ask "install chrome?" N; then
 	if grep -v -q 'deb http://dl.google.com/linux/chrome/deb/ stable main' /etc/apt/sources.list.d/google.list; then
 		wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -

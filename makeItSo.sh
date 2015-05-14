@@ -13,6 +13,7 @@ if ask "Install theSha1chemist's vim and zsh setup?" N; then
 	command_exists zsh
 	if [ $? -eq 0 ]; then
 		print_good "Excellent, you have zsh installed"
+		$(which zsh) ./dotFiles.sh 
 	else
 		print_notification "zsh not found, installing..."
 		apt-get install -y zsh
