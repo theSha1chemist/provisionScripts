@@ -32,11 +32,11 @@ if [ $(dpkg-query -W -f='${Status}' iceweasel 2>/dev/null | grep -c -v "ok insta
 	fi
 fi
 #TODO fix this...
-if ask "install chrome?" N; then
-	if grep -v -q 'deb http://dl.google.com/linux/chrome/deb/ stable main' /etc/apt/sources.list.d/google.list; then
-		wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
-		sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
-		apt-get update -y
-		apt-get install -y google-chrome-stable
-	fi
-fi
+#if ask "install chrome?" N; then
+#	if grep -v -q 'deb http://dl.google.com/linux/chrome/deb/ stable main' /etc/apt/sources.list.d/google.list; then
+#		wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+#		sh -c 'echo "deb http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google.list'
+#		apt-get update -y
+#		apt-get install -y google-chrome-stable
+#	fi
+#fi
