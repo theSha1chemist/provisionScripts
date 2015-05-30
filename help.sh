@@ -72,7 +72,7 @@ fi
 }
 update(){
 if ask "Step 0: Fresh the system?" Y; then
-apt-get update -y && apt-get upgrade -y
+apt-get -qq update && apt-get upgrade -y
 fi
 }
 command_exists () {
