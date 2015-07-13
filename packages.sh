@@ -18,7 +18,7 @@ if ask "Install useful gui tools?" N; then
 	apt-get -qq update
 	apt-get install -y caffeine keepnote shutter glipper virtualbox hexchat wireshark vlc browser-plugin-vlc sublime-text-installer openjdk-8-jdk
 fi
-
+#TODO add repo for most up to date virtual box
 #TODO test this 
 # may need to install libgcrypt11 on ubu 15. http://tipsonubuntu.com/2015/04/24/install-spotify-in-ubuntu-15-04-fix-not-launch-issue/
 if ask "Install spotify fat client? Warning: untested." N; then
