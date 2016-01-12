@@ -8,15 +8,15 @@ if ask "upgrade, update and dist-upgrade?" N; then
 fi
 
 if ask "install useful commandline tools?" N; then
-	apt-get install -y terminator bpython zsh build-essential cmake python-dev tree cifs-utils git curl vim binutils-mingw-w64 gcc-mingw-w64 mingw-w64 mingw-w64-dev
+	apt-get install -y terminator bpython zsh build-essential cmake python-dev git curl vim tree  # cifs-utils binutils-mingw-w64 gcc-mingw-w64 mingw-w64 mingw-w64-dev
 fi
 
 if ask "Install useful gui tools?" N; then
 	add-apt-repository ppa:caffeine-developers/ppa
 	add-apt-repository ppa:gwendal-lebihan-dev/hexchat-stable
-	add-apt-repository ppa:webupd8team/sublime-text-3
+	add-apt-repository ppa:webupd8team/sublime-text-2
 	apt-get -qq update
-	apt-get install -y caffeine keepnote shutter glipper virtualbox hexchat wireshark vlc browser-plugin-vlc sublime-text-installer openjdk-8-jdk
+	apt-get install -y caffeine keepnote shutter glipper virtualbox hexchat wireshark vlc browser-plugin-vlc sublime-text-installer # openjdk-8-jdk
 fi
 #TODO add repo for most up to date virtual box
 #TODO test this 
