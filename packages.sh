@@ -17,6 +17,8 @@ if ask "Install useful gui tools?" N; then
 	add-apt-repository ppa:webupd8team/sublime-text-2
 	apt-get -qq update
 	apt-get install -y thunderbird skype keepnote shutter glipper virtualbox hexchat wireshark vlc browser-plugin-vlc sublime-text # openjdk-8-jdk caffeine <- 
+	wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb -P /tmp/
+	dpkg -i /tmp/google-chrome-stable_current_amd64.deb
 fi
 #TODO add repo for most up to date virtual box
 #TODO test this 
