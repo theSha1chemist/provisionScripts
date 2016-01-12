@@ -12,11 +12,11 @@ if ask "install useful commandline tools?" N; then
 fi
 
 if ask "Install useful gui tools?" N; then
-	add-apt-repository ppa:caffeine-developers/ppa
-	add-apt-repository ppa:gwendal-lebihan-dev/hexchat-stable
+	# add-apt-repository ppa:caffeine-developers/ppa
+	# add-apt-repository ppa:gwendal-lebihan-dev/hexchat-stable
 	add-apt-repository ppa:webupd8team/sublime-text-2
 	apt-get -qq update
-	apt-get install -y caffeine keepnote shutter glipper virtualbox hexchat wireshark vlc browser-plugin-vlc sublime-text-installer # openjdk-8-jdk
+	apt-get install -y thunderbird skype caffeine keepnote shutter glipper virtualbox hexchat wireshark vlc browser-plugin-vlc sublime-text-installer # openjdk-8-jdk
 fi
 #TODO add repo for most up to date virtual box
 #TODO test this 
