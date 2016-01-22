@@ -8,7 +8,7 @@ if ask "upgrade, update and dist-upgrade?" N; then
 fi
 
 if ask "install useful commandline tools?" N; then
-	apt-get install -y terminator bpython zsh build-essential cmake python-dev git curl vim tree  # cifs-utils binutils-mingw-w64 gcc-mingw-w64 mingw-w64 mingw-w64-dev
+	apt-get install -y terminator bpython zsh build-essential cmake python-dev git curl vim tree openvpn # cifs-utils binutils-mingw-w64 gcc-mingw-w64 mingw-w64 mingw-w64-dev
 fi
 
 if ask "Install useful gui tools?" N; then
